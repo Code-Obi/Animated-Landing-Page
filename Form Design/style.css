@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: arial;
+}
+:hover {
+  cursor: pointer;
+}
+:active {
+  cursor: grabbing;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: grey;
+}
+header {
+  width: 100vw;
+  height: 8rem;
+  background: crimson;
+}
+header nav {
+  width: 97%;
+  height: inherit;
+  background: hotpink;
+  margin: auto;
+}
+header nav ul {
+  width: 100vw;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+header nav ul li a{
+    font-size:1.9rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+header nav ul li a:hover{
+    text-decoration:underline;
+    text-decoration-thickness: .2rem;
+    text-underline-offset: .2rem;
+}
+
+section{
+    width:100vw;
+    height: 89vh;
+    outline:.2rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section form{
+    width:52rem;
+    height: auto;
+    background:tomato;
+    padding:1rem;
+    box-shadow:0rem .3rem .5rem black;
+    border-radius:1.5rem ;
+    -webkit-border-radius:1.5rem ;
+    -moz-border-radius:1.5rem ;
+    -ms-border-radius:1.5rem ;
+    -o-border-radius:1.5rem ;
+}
+section form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem 0rem;
+}
+section form div label{
+    font-size:1.8rem;
+}
+section form div input:not(input[type="submit"],input[type="reset"]){
+    width: 35rem;
+    padding:1.2rem 1rem;
+    border:none;
+    outline: none;
+    cursor: text;
+    font-size:1.5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+form input:not(input[type="submit"],input[type="reset"]):focus{
+    outline:.2rem solid rgb(0, 128, 255) !important;
+}
+.input-box{
+    position: relative;
+}
+img{
+    width:2rem;
+    position: absolute;
+    right:1rem;
+}
+section form div:nth-child(6){
+    display: flex;
+    justify-content: center;
+    gap:5rem;
+}
+section form div:nth-child(6) input{
+    width:12rem;
+    padding:.8rem 1rem;
+    border-radius: .5rem;
+    border:none;
+    font-weight: bold;
+    box-shadow: 0rem .1rem .3rem black;
+}

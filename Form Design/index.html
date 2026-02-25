@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Student Admission Form</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Us</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="/">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <form action="index.php" method="post"">
+                <div>
+                    <label for="fname">First Name :</label>
+                    <div class="input-box">
+                        <img src="icon/person.png" alt="Network Error Please Wait!">
+                        <input type="text" placeholder="Enter Your First Name" required id="fname">
+                    </div>
+                </div>
+                <div>
+                    <label for="lname">Last Name :</label>
+                    <div class="input-box">
+                        <img src="icon/person.png" alt="Network Error Please Wait!">
+                        <input type="text" placeholder="Enter Your Last Name" id="lname">
+                    </div>
+                </div>
+                <div>
+                    <label for="mail">Email :</label>
+                    <div class="input-box">
+                        <img src="icon/mail.png" alt="Network Error Please Wait!">
+                        <input type="email" placeholder="Enter Your Email Address" id="mail">
+                    </div>
+                </div>
+                <div>
+                    <label for="pass">Password :</label>
+                    <div class="input-box">
+                        <img src="icon/openEye.png" alt="Network Error Please Wait!">
+                        <input type="password" placeholder="Enter Your Email Address" id="mail">
+                    </div>
+                </div>
+                <div>
+                    <label for="num">Number :</label>
+                    <div class="input-box">
+                        <img src="icon/phone.png" alt="Network Error Please Wait!">
+                        <input type="number" placeholder="Enter Your Phone" id="num" maxlength="11">
+                    </div>
+                </div>
+                <div>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+    <script src="script.js"></script>
+    </body>
+</html>
